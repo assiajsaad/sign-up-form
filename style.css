@@ -1,0 +1,49 @@
+:root {
+  --bg-image-url: url("./ressources/images/halie-west-25xggax4bSA-unsplash.jpg");
+}
+
+@font-face {
+    font-family: "odin";
+    src: url("ressources/fonts/Norse-Bold.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+body {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.left {
+  background-image: var(--bg-image-url);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* height:inherit; */
+  width: 30%;
+}
+
+.transparent {
+    margin-top: 40%;
+    padding: 12px;
+    background-color: 	rgb(0,0,0,0.5);
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.odin-logo {
+    width: 100px;
+    height: 100px;
+}
+
+.odin-text {
+    font:
+    5rem "odin",
+    sans-serif;
+    color: white;
+}
