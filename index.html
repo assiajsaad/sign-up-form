@@ -18,11 +18,60 @@
       </div>
     </div>
     <div class="right">
-       <section class="text-info">
-        This is not a real online service! You know you need something like this
-        in tour life to help you realize your deepest dreams. Sign up now to get
-        started You know you want to.
-       </section>
+      <section class="form-info">
+        <div class="form-text">
+            <p>
+                This is not a real online service! You know you need something like
+                this in tour life to help you realize your deepest dreams. Sign up
+                <i>now</i> to get started.
+              </p>
+              <p>You know you want to.</p>
+        </div>
+      </section>
+      <form action="/" method="post">
+        <section class="form-input">
+          <h2 class="input-header">Let's Do this</h2>
+          <div class="input-row">
+            <div class="input-pair">
+              <label for="first-name">First Name</label>
+              <input type="text" id="first-name" name="first-name" required/>
+            </div>
+            <div class="input-pair">
+              <label for="last-name">Last Name</label>
+              <input type="text" id="last-name" name="last-name" required/>
+            </div>
+          </div>
+          <div class="input-row">
+            <div class="input-pair">
+              <label for="email">Email</label>
+              <input type="email" name="name" id="email" required/>
+            </div>
+            <div class="input-pair">
+              <label for="phone-number">Phone Number</label>
+              <input type="number" name="phone-number" id="phone-number" required/>
+            </div>
+          </div>
+          <div class="input-row">
+            <div class="input-pair">
+              <label for="password">Password</label>
+              <input type="password" name="password" id="password" required/>
+            </div>
+            <div class="input-pair">
+              <label for="confirm-password">Confirm Password</label>
+              <input
+                type="password"
+                name="confirm-password"
+                id="confirm-password"
+                required
+              />
+            </div>
+          </div>
+        </section>
+        <section class="form-submit">
+          <input type="submit" class="btn-submit" value="Create Account" />
+          <p>Already have an account ? <a href="/" class="login-link">Login</a></p>
+        </section>
+      </form>
     </div>
   </body>
 </html>

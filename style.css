@@ -1,19 +1,23 @@
 :root {
   --bg-image-url: url("./ressources/images/halie-west-25xggax4bSA-unsplash.jpg");
+  --color-green: #596d48;
+  --light-border: #e5e7eb;
+  --light-grey-bg-color: rgb(220, 220, 220);
+  --bg-form-input: rgb(255, 255, 255);
 }
 
 @font-face {
-    font-family: "odin";
-    src: url("ressources/fonts/Norse-Bold.otf") format("opentype");
-    font-weight: normal;
-    font-style: normal;
-  }
+  font-family: "odin";
+  src: url("ressources/fonts/Norse-Bold.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
 
 body {
-    display: flex;
-    margin: 0;
-    padding: 0;
-    height: 100vh;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
 }
 
 .left {
@@ -21,29 +25,129 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  /* height:inherit; */
   width: 30%;
+  /* display: flex; */
+  /* align-items: center; */
+  /* height:inherit; */
+  /* flex: 1; */
 }
 
 .transparent {
-    margin-top: 40%;
-    padding: 12px;
-    background-color: 	rgb(0,0,0,0.5);
-    width: 100%;
-    box-sizing: border-box;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  /* flex-shrink: 1; */
+  margin-top: 40%;
+  padding: 12px;
+  background-color: rgb(0, 0, 0, 0.5);
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .odin-logo {
-    width: 100px;
-    height: 100px;
+  width: 100px;
+  height: 100px;
 }
 
 .odin-text {
-    font:
-    5rem "odin",
-    sans-serif;
-    color: white;
+  font: 5rem "odin", sans-serif;
+  color: white;
+}
+
+.odin-logo,
+.odin-text {
+  flex-shrink: 1;
+}
+
+.form-text {
+  margin: 70px 0 50px 35px;
+}
+
+/* Right */
+
+.right {
+  flex: 2;
+  background-color: var(--light-grey-bg-color);
+  /* flex-basis: 60%; */
+}
+
+.form-info {
+  font-weight: 800;
+  font-size: 18px;
+  width: 100%;
+}
+
+.form-input {
+  background-color: var(--bg-form-input);
+}
+
+p {
+  width: 75ch;
+}
+
+.input-header {
+  padding-top: 12px;
+  margin-left: 35px;
+}
+
+.input-row {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.input-pair {
+  margin: 10px 35px;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+}
+
+.login-link {
+  color: var(--color-green);
+}
+
+.btn-submit {
+  background-color: var(--color-green);
+  color: var(--light-border);
+  border: none;
+  border-radius: 8px;
+  width: 170px;
+  height: 35px;
+  cursor: pointer;
+}
+
+.form-submit {
+  padding: 25px 35px;
+}
+
+/* Form styling */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"]{
+    border: 1px solid var(--light-border);
+}
+
+
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus {
+  -webkit-border: 1px solid lightblue;
+  border: 1px solid lightblue;
+  border-radius: 3px;
+}
+input[type="text"]:invalid,
+input[type="email"]:invalid,
+input[type="password"]:invalid,
+input[type="number"]:invalid {
+  -webkit-border: 1px solid #D55C5F;
+  border: 1px solid #D55C5F;
+  border-radius: 3px;
+
 }
