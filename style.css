@@ -79,6 +79,7 @@ body {
 
 .form-input {
   background-color: var(--bg-form-input);
+  box-shadow:  0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 p {
@@ -141,13 +142,22 @@ input[type="number"]:focus {
   -webkit-border: 1px solid lightblue;
   border: 1px solid lightblue;
   border-radius: 3px;
+  box-shadow:  0 0 10px rgba(0, 0, 0, 0.5);
 }
-input[type="text"]:invalid,
-input[type="email"]:invalid,
-input[type="password"]:invalid,
-input[type="number"]:invalid {
+
+input.error {
   -webkit-border: 1px solid #D55C5F;
   border: 1px solid #D55C5F;
   border-radius: 3px;
 
 }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+  }
